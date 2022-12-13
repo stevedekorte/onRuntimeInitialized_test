@@ -1,0 +1,26 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+
+        {
+            "label": "Build",
+            "type": "shell",
+            "command": "/bin/zsh",
+            "args": [
+                "./_compile.sh"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}",
+                "_runner": "terminal",
+                "isBackground": "false",
+            },
+            "presentation": {
+                "panel": "shared",
+                "clear": false,
+                "close": true,
+            },
+            "problemMatcher": []
+        }
+
+    ]
+}

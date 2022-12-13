@@ -1,0 +1,22 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "launch local HTTP",
+            "url": "http://localhost:8000/index.html",
+            "webRoot": "${workspaceFolder}",
+            //"runtimeArgs": [ "--disable-web-security" ],
+            "preLaunchTask": "Build",
+            "enableContentValidation": false,
+            "sourceMaps": true,
+            //"sourceRoot":  "${workspaceFolder}",
+            "sourceMapPathOverrides": {
+                "/Users/steve/_projects/sites/ioWASM/": "${workspaceRoot}/"     
+            }
+        }
+
+    ]
+}
